@@ -1,0 +1,1907 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Canada se India Property Bechni Hai? | Cross-Border Real Estate
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* ===================================
+           CSS Variables & Base Styles
+           =================================== */
+
+      :root {
+        --color-primary: #1a3a52;
+        --color-primary-light: #2d5a7b;
+        --color-accent: #c17f24;
+        --color-accent-light: #d4a04a;
+        --color-accent-soft: #f8f3eb;
+        --color-bg: #fdfcfa;
+        --color-bg-alt: #f5f2ed;
+        --color-text: #2c2c2c;
+        --color-text-light: #5a5a5a;
+        --color-text-muted: #888;
+        --color-border: #e5e0d8;
+        --color-success: #2d7d46;
+
+        --font-display: "Playfair Display", Georgia, serif;
+        --font-body: "Source Sans 3", -apple-system, sans-serif;
+
+        --space-xs: 0.5rem;
+        --space-sm: 1rem;
+        --space-md: 1.5rem;
+        --space-lg: 2.5rem;
+        --space-xl: 4rem;
+        --space-2xl: 6rem;
+
+        --radius-sm: 4px;
+        --radius-md: 8px;
+        --radius-lg: 16px;
+
+        --transition-fast: 0.15s ease;
+        --transition-base: 0.25s ease;
+        --transition-slow: 0.4s ease;
+
+        --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+        --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+        --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.12);
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: var(--font-body);
+        font-size: 17px;
+        line-height: 1.7;
+        color: var(--color-text);
+        background-color: var(--color-bg);
+        overflow-x: hidden;
+      }
+
+      .bg-pattern {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: radial-gradient(
+            circle at 20% 80%,
+            rgba(193, 127, 36, 0.03) 0%,
+            transparent 50%
+          ),
+          radial-gradient(
+            circle at 80% 20%,
+            rgba(26, 58, 82, 0.03) 0%,
+            transparent 50%
+          );
+        pointer-events: none;
+        z-index: -2;
+      }
+
+      .bg-gradient {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 60vh;
+        background: linear-gradient(
+          180deg,
+          var(--color-accent-soft) 0%,
+          transparent 100%
+        );
+        pointer-events: none;
+        z-index: -1;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 var(--space-md);
+      }
+
+      h1,
+      h2,
+      h3,
+      h4 {
+        font-family: var(--font-display);
+        font-weight: 600;
+        line-height: 1.3;
+        color: var(--color-primary);
+      }
+
+      h2 {
+        font-size: clamp(1.8rem, 4vw, 2.5rem);
+      }
+
+      h3 {
+        font-size: 1.25rem;
+      }
+
+      p {
+        color: var(--color-text-light);
+      }
+
+      strong {
+        color: var(--color-text);
+        font-weight: 600;
+      }
+
+      /* Navigation */
+      .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        background: rgba(253, 252, 250, 0.9);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid var(--color-border);
+      }
+
+      .nav-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: var(--space-sm) var(--space-md);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: var(--space-xs);
+      }
+
+      .logo-icon {
+        font-size: 1.5rem;
+        color: var(--color-accent);
+      }
+
+      .logo-text {
+        font-family: var(--font-display);
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: var(--color-primary);
+      }
+
+      .nav-cta {
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: var(--color-primary);
+        text-decoration: none;
+        padding: var(--space-xs) var(--space-sm);
+        border: 2px solid var(--color-primary);
+        border-radius: var(--radius-md);
+        transition: var(--transition-base);
+      }
+
+      .nav-cta:hover {
+        background: var(--color-primary);
+        color: white;
+      }
+
+      /* Buttons */
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: var(--space-xs);
+        padding: var(--space-sm) var(--space-md);
+        font-family: var(--font-body);
+        font-size: 1rem;
+        font-weight: 600;
+        text-decoration: none;
+        border-radius: var(--radius-md);
+        cursor: pointer;
+        transition: var(--transition-base);
+        border: none;
+      }
+
+      .btn-primary {
+        background: var(--color-primary);
+        color: white;
+      }
+
+      .btn-primary:hover {
+        background: var(--color-primary-light);
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-md);
+      }
+
+      .btn-secondary {
+        background: transparent;
+        color: var(--color-primary);
+        border: 2px solid var(--color-primary);
+      }
+
+      .btn-secondary:hover {
+        background: var(--color-primary);
+        color: white;
+      }
+
+      .btn-full {
+        width: 100%;
+      }
+
+      /* Hero Section */
+      .hero {
+        padding: calc(80px + var(--space-2xl)) 0 var(--space-2xl);
+        text-align: center;
+      }
+
+      .hero-container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 var(--space-md);
+      }
+
+      .hero-badge {
+        display: inline-block;
+        padding: var(--space-xs) var(--space-sm);
+        background: var(--color-accent-soft);
+        border: 1px solid var(--color-accent-light);
+        border-radius: 100px;
+        font-size: 0.85rem;
+        font-weight: 500;
+        color: var(--color-accent);
+        margin-bottom: var(--space-md);
+        animation: fadeInUp 0.6s ease;
+      }
+
+      .hero-title {
+        font-size: clamp(2rem, 5vw, 3.2rem);
+        margin-bottom: var(--space-md);
+        animation: fadeInUp 0.6s ease 0.1s backwards;
+      }
+
+      .hero-title-accent {
+        display: block;
+        color: var(--color-accent);
+        font-size: 0.9em;
+      }
+
+      .hero-subtitle {
+        font-size: 1.2rem;
+        color: var(--color-text-light);
+        margin-bottom: var(--space-lg);
+        animation: fadeInUp 0.6s ease 0.2s backwards;
+      }
+
+      .hero-ctas {
+        display: flex;
+        gap: var(--space-sm);
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: var(--space-lg);
+        animation: fadeInUp 0.6s ease 0.3s backwards;
+      }
+
+      .hero-trust {
+        display: flex;
+        gap: var(--space-md);
+        justify-content: center;
+        flex-wrap: wrap;
+        animation: fadeInUp 0.6s ease 0.4s backwards;
+      }
+
+      .trust-item {
+        display: flex;
+        align-items: center;
+        gap: var(--space-xs);
+        font-size: 0.9rem;
+        color: var(--color-text-muted);
+      }
+
+      .trust-icon {
+        color: var(--color-success);
+        font-weight: bold;
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Problem Section */
+      .problem {
+        padding: var(--space-xl) 0;
+        background: var(--color-bg-alt);
+      }
+
+      .problem-content {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      .section-eyebrow {
+        font-family: var(--font-body);
+        font-size: 0.85rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--color-accent);
+        margin-bottom: var(--space-sm);
+      }
+
+      .problem-text {
+        font-size: 1.25rem;
+        line-height: 1.8;
+        margin-bottom: var(--space-lg);
+      }
+
+      .problem-stats {
+        display: flex;
+        justify-content: center;
+        gap: var(--space-xl);
+        flex-wrap: wrap;
+      }
+
+      .stat {
+        text-align: center;
+      }
+
+      .stat-number {
+        display: block;
+        font-family: var(--font-display);
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--color-primary);
+      }
+
+      .stat-label {
+        font-size: 0.9rem;
+        color: var(--color-text-muted);
+      }
+
+      /* Process Section */
+      .process {
+        padding: var(--space-2xl) 0;
+      }
+
+      .section-title {
+        text-align: center;
+        margin-bottom: var(--space-sm);
+      }
+
+      .section-subtitle {
+        text-align: center;
+        font-size: 1.1rem;
+        color: var(--color-text-muted);
+        margin-bottom: var(--space-xl);
+      }
+
+      .process-steps {
+        max-width: 700px;
+        margin: 0 auto;
+      }
+
+      .step {
+        display: flex;
+        gap: var(--space-md);
+        margin-bottom: var(--space-lg);
+        position: relative;
+      }
+
+      .step:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        left: 28px;
+        top: 56px;
+        bottom: -24px;
+        width: 2px;
+        background: var(--color-border);
+      }
+
+      .step-number {
+        flex-shrink: 0;
+        width: 56px;
+        height: 56px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--color-primary);
+        color: white;
+        font-family: var(--font-display);
+        font-size: 1.1rem;
+        font-weight: 600;
+        border-radius: 50%;
+      }
+
+      .step-content h3 {
+        margin-bottom: var(--space-xs);
+      }
+
+      .step-content p {
+        font-size: 0.95rem;
+      }
+
+      /* Trust Section */
+      .trust {
+        padding: var(--space-2xl) 0;
+        background: var(--color-bg-alt);
+      }
+
+      .trust-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: var(--space-md);
+      }
+
+      .trust-card {
+        background: white;
+        padding: var(--space-lg);
+        border-radius: var(--radius-lg);
+        box-shadow: var(--shadow-sm);
+        transition: var(--transition-base);
+      }
+
+      .trust-card:hover {
+        transform: translateY(-4px);
+        box-shadow: var(--shadow-md);
+      }
+
+      .trust-card-icon {
+        width: 56px;
+        height: 56px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--color-accent-soft);
+        border-radius: var(--radius-md);
+        margin-bottom: var(--space-sm);
+        color: var(--color-accent);
+      }
+
+      .trust-card h3 {
+        margin-bottom: var(--space-xs);
+      }
+
+      .trust-card p {
+        font-size: 0.95rem;
+      }
+
+      /* Situations / Accordion Section */
+      .situations {
+        padding: var(--space-2xl) 0;
+      }
+
+      .accordion {
+        max-width: 700px;
+        margin: 0 auto;
+      }
+
+      .accordion-item {
+        border-bottom: 1px solid var(--color-border);
+      }
+
+      .accordion-header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: var(--space-md) 0;
+        background: none;
+        border: none;
+        font-family: var(--font-display);
+        font-size: 1.1rem;
+        font-weight: 500;
+        color: var(--color-primary);
+        cursor: pointer;
+        text-align: left;
+        transition: var(--transition-base);
+      }
+
+      .accordion-header:hover {
+        color: var(--color-accent);
+      }
+
+      .accordion-icon {
+        flex-shrink: 0;
+        transition: var(--transition-base);
+        color: var(--color-text-muted);
+      }
+
+      .accordion-item.active .accordion-icon {
+        transform: rotate(180deg);
+      }
+
+      .accordion-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease, padding 0.3s ease;
+      }
+
+      .accordion-item.active .accordion-content {
+        max-height: 300px;
+        padding-bottom: var(--space-md);
+      }
+
+      .accordion-content p {
+        font-size: 0.95rem;
+        line-height: 1.8;
+      }
+
+      /* Testimonials Section */
+      .testimonials {
+        padding: var(--space-2xl) 0;
+        background: var(--color-primary);
+      }
+
+      .testimonials .section-title {
+        color: white;
+      }
+
+      .testimonial-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: var(--space-md);
+      }
+
+      .testimonial-card {
+        background: rgba(255, 255, 255, 0.1);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        padding: var(--space-lg);
+        border-radius: var(--radius-lg);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .testimonial-quote {
+        font-family: var(--font-display);
+        font-size: 4rem;
+        line-height: 1;
+        color: var(--color-accent);
+        margin-bottom: var(--space-sm);
+      }
+
+      .testimonial-text {
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 1rem;
+        margin-bottom: var(--space-md);
+      }
+
+      .testimonial-author {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .author-name {
+        color: white;
+        font-weight: 600;
+      }
+
+      .author-location {
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 0.9rem;
+      }
+
+      /* FAQ Section */
+      .faq {
+        padding: var(--space-2xl) 0;
+      }
+
+      .faq-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: var(--space-md);
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      .faq-item {
+        padding: var(--space-md);
+        background: var(--color-bg-alt);
+        border-radius: var(--radius-md);
+      }
+
+      .faq-item h3 {
+        font-size: 1rem;
+        margin-bottom: var(--space-xs);
+      }
+
+      .faq-item p {
+        font-size: 0.9rem;
+        line-height: 1.7;
+      }
+
+      /* Contact Section */
+      .contact {
+        padding: var(--space-2xl) 0;
+        background: var(--color-bg-alt);
+      }
+
+      .contact-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1.2fr;
+        gap: var(--space-xl);
+        align-items: start;
+      }
+
+      @media (max-width: 800px) {
+        .contact-wrapper {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .contact-title {
+        font-size: 2rem;
+        margin-bottom: var(--space-sm);
+      }
+
+      .contact-subtitle {
+        font-size: 1.1rem;
+        line-height: 1.7;
+        margin-bottom: var(--space-lg);
+      }
+
+      .contact-details {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-sm);
+      }
+
+      .contact-detail {
+        display: flex;
+        align-items: center;
+        gap: var(--space-sm);
+        color: var(--color-text-light);
+      }
+
+      .contact-detail svg {
+        color: var(--color-accent);
+        flex-shrink: 0;
+      }
+
+      /* Form Tabs */
+      .contact-forms {
+        background: white;
+        border-radius: var(--radius-lg);
+        box-shadow: var(--shadow-md);
+        overflow: hidden;
+      }
+
+      .form-tabs {
+        display: flex;
+        border-bottom: 1px solid var(--color-border);
+      }
+
+      .form-tab {
+        flex: 1;
+        padding: var(--space-md);
+        background: none;
+        border: none;
+        font-family: var(--font-body);
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--color-text-muted);
+        cursor: pointer;
+        transition: var(--transition-base);
+        position: relative;
+      }
+
+      .form-tab::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background: transparent;
+        transition: var(--transition-base);
+      }
+
+      .form-tab.active {
+        color: var(--color-primary);
+      }
+
+      .form-tab.active::after {
+        background: var(--color-accent);
+      }
+
+      .form-tab:hover:not(.active) {
+        color: var(--color-text);
+      }
+
+      /* Form Content */
+      .form-content {
+        display: none;
+        padding: var(--space-lg);
+      }
+
+      .form-content.active {
+        display: block;
+      }
+
+      .form-description {
+        margin-bottom: var(--space-md);
+        color: var(--color-text-muted);
+      }
+
+      /* Calendly Placeholder */
+      .calendly-placeholder {
+        min-height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .calendly-mock {
+        text-align: center;
+        padding: var(--space-lg);
+        background: var(--color-bg-alt);
+        border-radius: var(--radius-md);
+        border: 2px dashed var(--color-border);
+      }
+
+      .calendly-mock p {
+        margin-bottom: var(--space-xs);
+      }
+
+      .calendly-mock .calendly-note {
+        font-size: 0.85rem;
+        color: var(--color-text-muted);
+      }
+
+      .calendly-mock code {
+        display: block;
+        margin-top: var(--space-sm);
+        padding: var(--space-sm);
+        background: white;
+        border-radius: var(--radius-sm);
+        font-size: 0.75rem;
+        color: var(--color-text-muted);
+        word-break: break-all;
+      }
+
+      /* Callback Form */
+      .callback-form {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-md);
+      }
+
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-xs);
+      }
+
+      .form-group label {
+        font-weight: 500;
+        color: var(--color-text);
+        font-size: 0.9rem;
+      }
+
+      .form-group .optional {
+        font-weight: 400;
+        color: var(--color-text-muted);
+      }
+
+      .form-group input,
+      .form-group select,
+      .form-group textarea {
+        padding: var(--space-sm);
+        font-family: var(--font-body);
+        font-size: 1rem;
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-md);
+        background: white;
+        transition: var(--transition-base);
+      }
+
+      .form-group input:focus,
+      .form-group select:focus,
+      .form-group textarea:focus {
+        outline: none;
+        border-color: var(--color-accent);
+        box-shadow: 0 0 0 3px rgba(193, 127, 36, 0.15);
+      }
+
+      .form-group textarea {
+        resize: vertical;
+        min-height: 80px;
+      }
+
+      /* Form Success */
+      .form-success {
+        display: none;
+        text-align: center;
+        padding: var(--space-xl);
+      }
+
+      .form-success.show {
+        display: block;
+        animation: fadeInUp 0.4s ease;
+      }
+
+      .success-icon {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--color-success);
+        color: white;
+        font-size: 1.5rem;
+        border-radius: 50%;
+        margin: 0 auto var(--space-md);
+      }
+
+      .form-success h3 {
+        margin-bottom: var(--space-xs);
+      }
+
+      /* Footer */
+      .footer {
+        padding: var(--space-xl) 0 var(--space-md);
+        background: var(--color-primary);
+        color: white;
+      }
+
+      .footer-content {
+        display: flex;
+        justify-content: space-between;
+        gap: var(--space-xl);
+        margin-bottom: var(--space-xl);
+        flex-wrap: wrap;
+      }
+
+      .footer-brand {
+        max-width: 300px;
+      }
+
+      .footer-brand .logo {
+        margin-bottom: var(--space-sm);
+      }
+
+      .footer-brand .logo-text {
+        color: white;
+      }
+
+      .footer-brand p {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 0.9rem;
+      }
+
+      .footer-links {
+        display: flex;
+        gap: var(--space-xl);
+      }
+
+      .footer-column h4 {
+        color: white;
+        font-family: var(--font-body);
+        font-size: 0.9rem;
+        font-weight: 600;
+        margin-bottom: var(--space-sm);
+      }
+
+      .footer-column ul {
+        list-style: none;
+      }
+
+      .footer-column li {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 0.9rem;
+        margin-bottom: var(--space-xs);
+        cursor: pointer;
+        transition: var(--transition-base);
+      }
+
+      .footer-column li:hover {
+        color: white;
+      }
+
+      .footer-bottom {
+        padding-top: var(--space-md);
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .footer-bottom p {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 0.85rem;
+        margin-bottom: var(--space-xs);
+      }
+
+      .footer-disclaimer {
+        font-size: 0.8rem !important;
+        max-width: 700px;
+      }
+
+      /* Responsive */
+      @media (max-width: 600px) {
+        .hero-ctas {
+          flex-direction: column;
+          align-items: stretch;
+        }
+
+        .problem-stats {
+          gap: var(--space-md);
+        }
+
+        .stat-number {
+          font-size: 2rem;
+        }
+
+        .step {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .step::after {
+          display: none;
+        }
+
+        .step-number {
+          margin: 0 auto var(--space-sm);
+        }
+
+        .footer-links {
+          flex-direction: column;
+          gap: var(--space-md);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Decorative background elements -->
+    <div class="bg-pattern"></div>
+    <div class="bg-gradient"></div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+      <div class="nav-container">
+        <div class="logo">
+          <span class="logo-icon">◈</span>
+          <span class="logo-text">CrossBorder</span>
+        </div>
+        <a href="#contact" class="nav-cta">Free Consultation</a>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+      <div class="hero-container">
+        <div class="hero-badge">Licensed Canadian Real Estate Firm</div>
+        <h1 class="hero-title">
+          Canada se India property bechni hai?
+          <span class="hero-title-accent"
+            >Hum handle karte hain — poora process.</span
+          >
+        </h1>
+        <p class="hero-subtitle">
+          Vetted India team. FEMA-compliant repatriation. Ek phone call se shuru
+          karo.
+        </p>
+        <div class="hero-ctas">
+          <a href="#contact" class="btn btn-primary">
+            <span>Book a Call</span>
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+          <a href="#callback" class="btn btn-secondary">Request Callback</a>
+        </div>
+        <div class="hero-trust">
+          <div class="trust-item">
+            <span class="trust-icon">✓</span>
+            <span>Surrey & GTA Based</span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon">✓</span>
+            <span>Flat Fee — No Percentage</span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon">✓</span>
+            <span>8+ Years India Network</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Problem Section -->
+    <section class="problem">
+      <div class="container">
+        <div class="problem-content">
+          <h2 class="section-eyebrow">The Reality</h2>
+          <p class="problem-text">
+            India mein property hai, aap Canada mein ho.
+            <strong>Agent phone nahi uthata.</strong>
+            POA ka process samajh nahi aata. Property bech bhi lo toh paisa
+            laana alag headache.
+            <strong>Koi accountable nahi hai is side pe.</strong>
+          </p>
+          <div class="problem-stats">
+            <div class="stat">
+              <span class="stat-number">10,000</span>
+              <span class="stat-label">km door se coordination</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">12+</span>
+              <span class="stat-label">time zones ka difference</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">∞</span>
+              <span class="stat-label">trust issues</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="process">
+      <div class="container">
+        <h2 class="section-title">How It Works</h2>
+        <p class="section-subtitle">
+          Aapka kaam: decisions. Humara kaam: execution.
+        </p>
+
+        <div class="process-steps">
+          <div class="step">
+            <div class="step-number">01</div>
+            <div class="step-content">
+              <h3>Free Consultation</h3>
+              <p>
+                15 min call — we understand your situation, property details,
+                and goals. No pressure, just clarity.
+              </p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-number">02</div>
+            <div class="step-content">
+              <h3>Property Verification</h3>
+              <p>
+                Our India team inspects physically, checks title, gets
+                encumbrance certificate, assesses market value.
+              </p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-number">03</div>
+            <div class="step-content">
+              <h3>POA & Documentation</h3>
+              <p>
+                We prepare all documents. You just sign at a local notary. No
+                India trip needed.
+              </p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-number">04</div>
+            <div class="step-content">
+              <h3>Sale Execution</h3>
+              <p>
+                Buyer search, negotiation, registration — all handled by our
+                team. You get updates, not headaches.
+              </p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-number">05</div>
+            <div class="step-content">
+              <h3>Money to Canada</h3>
+              <p>
+                FEMA-compliant repatriation. CA certification. Bank paperwork.
+                Money in your Canadian account, properly documented.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Trust Us -->
+    <section class="trust">
+      <div class="container">
+        <h2 class="section-title">Why Trust Us</h2>
+
+        <div class="trust-grid">
+          <div class="trust-card">
+            <div class="trust-card-icon">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path
+                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                />
+              </svg>
+            </div>
+            <h3>Licensed & Registered</h3>
+            <p>
+              Real estate firm licensed in BC & Ontario. Real office, real
+              accountability. Not a WhatsApp operation.
+            </p>
+          </div>
+
+          <div class="trust-card">
+            <div class="trust-card-icon">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path
+                  d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                />
+              </svg>
+            </div>
+            <h3>8+ Year India Network</h3>
+            <p>
+              Vetted partners in major Indian cities. Performance-based
+              relationships, not just "some agent we found."
+            </p>
+          </div>
+
+          <div class="trust-card">
+            <div class="trust-card-icon">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path
+                  d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+            </div>
+            <h3>Flat Fee Pricing</h3>
+            <p>
+              $8,000 to $12,000 depending on complexity. No percentage of sale.
+              Your deal big or small, our effort same.
+            </p>
+          </div>
+
+          <div class="trust-card">
+            <div class="trust-card-icon">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path
+                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                />
+                <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+            </div>
+            <h3>Meet Us In Person</h3>
+            <p>
+              Based in Surrey & GTA. Come to our office, sit down, have chai.
+              We're real people, not a faceless website.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Situations Section -->
+    <section class="situations">
+      <div class="container">
+        <h2 class="section-title">Your Situation</h2>
+        <p class="section-subtitle">Click to expand — we've handled it all.</p>
+
+        <div class="accordion">
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span>"Maine property inherit ki hai"</span>
+              <svg
+                class="accordion-icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="accordion-content">
+              <p>
+                Succession certificate chahiye? Multiple owners hain? Family
+                mein disagreement hai? Yeh sab normal hai — complicated cases
+                are our specialty. Hum coordinate karte hain sab parties ke
+                saath and ensure proper legal documentation before sale.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span>"Pehle try kiya, kaam nahi hua"</span>
+              <svg
+                class="accordion-icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="accordion-content">
+              <p>
+                Agent ghosted? POA rejected ho gayi? Deal last minute pe gir
+                gaya? We pick up where others left off. Pehle samjhenge ki kya
+                problem hui, phir sahi approach decide karenge. Many of our
+                clients came after failed attempts elsewhere.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span>"Paisa Canada kaise laoon — samajh nahi aata"</span>
+              <svg
+                class="accordion-icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="accordion-content">
+              <p>
+                RBI rules, FEMA compliance, Form 15CA/CB, CA certification, TDS
+                deduction, NRO to NRE transfer — yeh sab hum coordinate karte
+                hain. You get money in your Canadian bank account, fully
+                documented and compliant. No hawala, no risk.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span>"Property pe koi baitha hai / tenant issue"</span>
+              <svg
+                class="accordion-icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="accordion-content">
+              <p>
+                Encroachment? Unauthorized tenant? Property pe kabza? These need
+                to be resolved before sale — our India team assesses the
+                situation and coordinates with local lawyers if needed. We tell
+                you upfront what's involved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+      <div class="container">
+        <h2 class="section-title">Client Stories</h2>
+
+        <div class="testimonial-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-quote">"</div>
+            <p class="testimonial-text">
+              3 saal se Chandigarh ki property bech nahi paa rahe the. Agent ne
+              do baar cheat kiya. Inse baat ki, 5 mahine mein sale complete.
+              Paisa account mein aa gaya. Finally peace of mind.
+            </p>
+            <div class="testimonial-author">
+              <span class="author-name">R. Singh</span>
+              <span class="author-location">Surrey, BC</span>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-quote">"</div>
+            <p class="testimonial-text">
+              Papa ki death ke baad property inherit hui. 4 siblings, sab
+              different countries mein. Coordination nightmare tha. These guys
+              handled everything — succession, POA, sale, distribution.
+            </p>
+            <div class="testimonial-author">
+              <span class="author-name">A. Patel</span>
+              <span class="author-location">Brampton, ON</span>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-quote">"</div>
+            <p class="testimonial-text">
+              Main sochti thi ki mujhe India jaana padega sale ke liye. POA se
+              sab ho gaya. Ek baar bhi nahi gayi. Highly recommend for anyone
+              stuck with India property.
+            </p>
+            <div class="testimonial-author">
+              <span class="author-name">M. Kaur</span>
+              <span class="author-location">Calgary, AB</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+      <div class="container">
+        <h2 class="section-title">Common Questions</h2>
+
+        <div class="faq-grid">
+          <div class="faq-item">
+            <h3>Kitna time lagta hai?</h3>
+            <p>
+              4-8 months typically. Depends on property location, documentation
+              status, and buyer market. We give you realistic timeline upfront.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3>Fees kya hain?</h3>
+            <p>
+              $8,000-$12,000 flat fee depending on complexity. Paid in
+              milestones: 40% at engagement, 40% at documentation, 20% at close.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3>Kya mujhe India jaana padega?</h3>
+            <p>
+              Usually no. Power of Attorney se sab ho jaata hai. You sign here
+              at a local notary, we handle everything in India.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3>Kya tum lawyers/CAs ho?</h3>
+            <p>
+              No — we coordinate with specialists. Think of us as your project
+              manager who ensures nothing falls through the cracks.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3>What if deal doesn't happen?</h3>
+            <p>
+              Milestone-based fees mean you don't pay everything upfront. If we
+              can't find a buyer or deal falls through, you're not out the full
+              amount.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3>Which cities in India?</h3>
+            <p>
+              We have partners across major metros and tier-2 cities: Delhi NCR,
+              Mumbai, Bangalore, Hyderabad, Chennai, Punjab, Gujarat, and more.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <h2 class="contact-title">Let's Talk</h2>
+            <p class="contact-subtitle">
+              15 minute call. Free hai. Pressure nahi hai.<br />
+              At minimum pata chal jaayega ki tumhara case kitna complicated hai
+              aur kya options hain.
+            </p>
+
+            <div class="contact-details">
+              <div class="contact-detail">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <path
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                  />
+                  <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                <span>Surrey, BC & Greater Toronto Area</span>
+              </div>
+              <div class="contact-detail">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <path
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  />
+                </svg>
+                <span>info@crossborderproperty.ca</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-forms">
+            <!-- Tab Navigation -->
+            <div class="form-tabs">
+              <button class="form-tab active" data-tab="book">
+                Book a Call
+              </button>
+              <button class="form-tab" data-tab="callback">
+                Request Callback
+              </button>
+            </div>
+
+            <!-- Book a Call Form -->
+            <div class="form-content active" id="book-form">
+              <p class="form-description">
+                Choose a time that works for you. We'll send a Google Meet link.
+              </p>
+
+              <!-- Calendly placeholder - replace with actual embed -->
+              <div class="calendly-placeholder" id="calendly-embed">
+                <div class="calendly-mock">
+                  <p>📅 Calendly Integration</p>
+                  <p class="calendly-note">
+                    Replace this div with your Calendly embed code
+                  </p>
+                  <code
+                    >&lt;div class="calendly-inline-widget"
+                    data-url="https://calendly.com/YOUR-LINK"&gt;&lt;/div&gt;</code
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Callback Form -->
+            <div class="form-content" id="callback-form">
+              <p class="form-description">
+                Leave your number — we'll call you within 24 hours.
+              </p>
+
+              <form id="callback-request-form" class="callback-form">
+                <div class="form-group">
+                  <label for="name">Your Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    placeholder="e.g., Rajesh Kumar"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    required
+                    placeholder="e.g., +1 604 555 1234"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="best-time">Best Time to Call</label>
+                  <select id="best-time" name="best_time" required>
+                    <option value="">Select a time...</option>
+                    <option value="morning">Morning (9am - 12pm)</option>
+                    <option value="afternoon">Afternoon (12pm - 5pm)</option>
+                    <option value="evening">Evening (5pm - 8pm)</option>
+                    <option value="weekend">Weekend</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="property-info"
+                    >About Your Property
+                    <span class="optional">(optional)</span></label
+                  >
+                  <textarea
+                    id="property-info"
+                    name="property_info"
+                    rows="3"
+                    placeholder="e.g., Inherited flat in Delhi, want to sell..."
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-full">
+                  <span>Request Callback</span>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </form>
+
+              <!-- Success Message -->
+              <div class="form-success" id="form-success">
+                <div class="success-icon">✓</div>
+                <h3>Request Received!</h3>
+                <p>
+                  We'll call you within 24 hours at the time you specified.
+                  Check your phone!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <div class="logo">
+              <span class="logo-icon">◈</span>
+              <span class="logo-text">CrossBorder</span>
+            </div>
+            <p>
+              Helping Canadians navigate India property transactions since 2016.
+            </p>
+          </div>
+
+          <div class="footer-links">
+            <div class="footer-column">
+              <h4>Services</h4>
+              <ul>
+                <li>Sell Property in India</li>
+                <li>Buy Property in India</li>
+                <li>Inheritance Support</li>
+                <li>FEMA Repatriation</li>
+              </ul>
+            </div>
+
+            <div class="footer-column">
+              <h4>Company</h4>
+              <ul>
+                <li>About Us</li>
+                <li>How It Works</li>
+                <li>Client Stories</li>
+                <li>Contact</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2024 CrossBorder Property Services. Licensed Real Estate
+            Firm.
+          </p>
+          <p class="footer-disclaimer">
+            We coordinate property transactions and are not lawyers or chartered
+            accountants. Professional legal and tax advice should be sought
+            independently.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      /**
+       * CrossBorder Property Landing Page
+       * JavaScript for interactions and form handling
+       */
+
+      document.addEventListener("DOMContentLoaded", function () {
+        initAccordion();
+        initFormTabs();
+        initCallbackForm();
+        initSmoothScroll();
+        initNavbarScroll();
+      });
+
+      /**
+       * Accordion functionality
+       */
+      function initAccordion() {
+        const accordionItems = document.querySelectorAll(".accordion-item");
+
+        accordionItems.forEach((item) => {
+          const header = item.querySelector(".accordion-header");
+
+          header.addEventListener("click", () => {
+            accordionItems.forEach((otherItem) => {
+              if (
+                otherItem !== item &&
+                otherItem.classList.contains("active")
+              ) {
+                otherItem.classList.remove("active");
+              }
+            });
+            item.classList.toggle("active");
+          });
+        });
+      }
+
+      /**
+       * Form tab switching
+       */
+      function initFormTabs() {
+        const tabs = document.querySelectorAll(".form-tab");
+        const contents = document.querySelectorAll(".form-content");
+
+        tabs.forEach((tab) => {
+          tab.addEventListener("click", () => {
+            const targetTab = tab.dataset.tab;
+
+            tabs.forEach((t) => t.classList.remove("active"));
+            tab.classList.add("active");
+
+            contents.forEach((content) => {
+              content.classList.remove("active");
+            });
+
+            document
+              .getElementById(`${targetTab}-form`)
+              .classList.add("active");
+          });
+        });
+      }
+
+      /**
+       * Callback form submission
+       */
+      function initCallbackForm() {
+        const form = document.getElementById("callback-request-form");
+        const successMessage = document.getElementById("form-success");
+
+        if (!form) return;
+
+        form.addEventListener("submit", async function (e) {
+          e.preventDefault();
+
+          const formData = {
+            name: document.getElementById("name").value,
+            phone: document.getElementById("phone").value,
+            bestTime: document.getElementById("best-time").value,
+            propertyInfo: document.getElementById("property-info").value,
+            submittedAt: new Date().toISOString(),
+            source: getUTMParams(),
+          };
+
+          const submitBtn = form.querySelector('button[type="submit"]');
+          const originalBtnText = submitBtn.innerHTML;
+          submitBtn.innerHTML = "<span>Sending...</span>";
+          submitBtn.disabled = true;
+
+          try {
+            // Option 1: Send to Google Apps Script (uncomment and add your URL)
+            // await sendToGoogleScript(formData);
+
+            // Option 2: Send to your backend API
+            // await sendToBackend(formData);
+
+            // For now: Store locally
+            storeLeadLocally(formData);
+
+            await new Promise((resolve) => setTimeout(resolve, 800));
+
+            form.style.display = "none";
+            successMessage.classList.add("show");
+
+            trackConversion(formData);
+          } catch (error) {
+            console.error("Form submission error:", error);
+            alert(
+              "Something went wrong. Please try again or call us directly."
+            );
+            submitBtn.innerHTML = originalBtnText;
+            submitBtn.disabled = false;
+          }
+        });
+      }
+
+      /**
+       * Get UTM parameters
+       */
+      function getUTMParams() {
+        const params = new URLSearchParams(window.location.search);
+        return {
+          utm_source: params.get("utm_source") || "direct",
+          utm_medium: params.get("utm_medium") || "",
+          utm_campaign: params.get("utm_campaign") || "",
+          utm_content: params.get("utm_content") || "",
+        };
+      }
+
+      /**
+       * Store lead locally
+       */
+      function storeLeadLocally(data) {
+        const leads = JSON.parse(
+          localStorage.getItem("crossborder_leads") || "[]"
+        );
+        leads.push(data);
+        localStorage.setItem("crossborder_leads", JSON.stringify(leads));
+        console.log("Lead stored locally:", data);
+      }
+
+      /**
+       * Send to Google Apps Script
+       */
+      async function sendToGoogleScript(data) {
+        const GOOGLE_SCRIPT_URL = "YOUR_GOOGLE_APPS_SCRIPT_URL_HERE";
+
+        await fetch(GOOGLE_SCRIPT_URL, {
+          method: "POST",
+          mode: "no-cors",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(data),
+        });
+
+        return true;
+      }
+
+      /**
+       * Send to backend API
+       */
+      async function sendToBackend(data) {
+        const API_ENDPOINT = "/api/callback-request";
+
+        const response = await fetch(API_ENDPOINT, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(data),
+        });
+
+        if (!response.ok) throw new Error("Backend request failed");
+        return response.json();
+      }
+
+      /**
+       * Track conversion
+       */
+      function trackConversion(data) {
+        if (typeof gtag !== "undefined") {
+          gtag("event", "generate_lead", {
+            event_category: "engagement",
+            event_label: "callback_request",
+            value: 1,
+          });
+        }
+
+        if (typeof fbq !== "undefined") {
+          fbq("track", "Lead", {
+            content_name: "Callback Request",
+            content_category: "India Property Sale",
+          });
+        }
+
+        console.log("Conversion tracked:", data);
+      }
+
+      /**
+       * Smooth scroll
+       */
+      function initSmoothScroll() {
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute("href"));
+
+            if (target) {
+              const navHeight = document.querySelector(".nav").offsetHeight;
+              const targetPosition =
+                target.getBoundingClientRect().top +
+                window.pageYOffset -
+                navHeight -
+                20;
+
+              window.scrollTo({
+                top: targetPosition,
+                behavior: "smooth",
+              });
+            }
+          });
+        });
+      }
+
+      /**
+       * Navbar scroll effect
+       */
+      function initNavbarScroll() {
+        const nav = document.querySelector(".nav");
+
+        window.addEventListener("scroll", () => {
+          if (window.pageYOffset > 10) {
+            nav.style.boxShadow = "0 2px 20px rgba(0,0,0,0.1)";
+          } else {
+            nav.style.boxShadow = "none";
+          }
+        });
+      }
+
+      /**
+       * Export leads (for debugging)
+       */
+      window.exportLeads = function () {
+        const leads = JSON.parse(
+          localStorage.getItem("crossborder_leads") || "[]"
+        );
+        console.table(leads);
+        return leads;
+      };
+    </script>
+  </body>
+</html>
